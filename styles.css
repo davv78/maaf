@@ -4,7 +4,6 @@ body {
   font-size: 20px;
   background-image: url('assets/abe.png'); /* Ganti dengan path ke foto dia */
   background-size: 25%; /* Ukuran setiap foto kecil */
-  background-size: 50%; /* Ukuran setiap foto kecil */
   background-repeat: repeat; /* Mengulang gambar ke seluruh halaman */
   background-position: 0 0; /* Posisi awal background */
   background-attachment: fixed; /* Tetap di tempat saat halaman di-scroll */
@@ -22,9 +21,10 @@ body {
   border-radius: 10px;
 }
 h1, h2 {
-  font-family: 'Poppins', sans-serif;
-    font-weight: bold;
-  }
+  font-family: 'Fredoka One', sans-serif;
+  font-weight: bold;
+}
+
 h1 {
   color: #FF69B4;
   font-size: 150px;
