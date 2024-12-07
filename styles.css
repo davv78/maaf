@@ -3,7 +3,7 @@ body {
   text-align: center;
   font-size: 20px;
   background-image: url('assets/abe.png'); /* Ganti dengan path ke foto dia */
-  background-size: 8%; /* Ukuran setiap foto kecil */
+  background-size: 13%; /* Ukuran setiap foto kecil */
   background-repeat: repeat; /* Mengulang gambar ke seluruh halaman */
   background-position: 0 0; /* Posisi awal background */
   background-attachment: fixed; /* Tetap di tempat saat halaman di-scroll */
@@ -25,7 +25,7 @@ h1, h2 {
   }
 h1 {
   color: #FF69B4;
-  font-size: 50px;
+  font-size: 150px;
 }
 
 .page-icon {
