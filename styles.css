@@ -1,0 +1,164 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+  font-size: 20px;
+  background-image: url('assets/abe.png'); /* Ganti dengan path ke foto dia */
+  background-size: 8%; /* Ukuran setiap foto kecil */
+  background-repeat: repeat; /* Mengulang gambar ke seluruh halaman */
+  background-position: 0 0; /* Posisi awal background */
+  background-attachment: fixed; /* Tetap di tempat saat halaman di-scroll */
+  background-color: #f9f9f9; /* Warna dasar jika gambar tidak dimuat */
+  animation: moveBackground 20s linear infinite;
+  color: #333;
+}
+
+#content {
+  margin: 50px auto;
+  max-width: 600px;
+  padding: 20px;
+  background: #fffffffd;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+}
+h1, h2 {
+    font-family: 'Fredoka One', cursive;
+  }
+h1 {
+  color: #FF69B4;
+  font-size: 50px;
+}
+
+.page-icon {
+    width: 40%; /* Sesuaikan gambar dengan lebar halaman */
+  }
+
+  .page-icon-sorry {
+    width: 60%; /* Sesuaikan gambar dengan lebar halaman */
+  }
+  
+button {
+  background-color: #FF69B4;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 10px;
+  transition: transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+button:hover {
+  background-color: #FF1493;
+  
+}
+
+
+
+.hidden {
+    display: none;
+  }
+  
+  .alert-container {
+    position: fixed;
+    
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  .alert-box {
+    background: rgb(255, 255, 255);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    animation: bounce 0.5s ease;
+  }
+  
+  .alert-icon {
+    width: 150px;
+    margin-bottom: 10px;
+  }
+  
+  @keyframes bounce {
+    0%, 100% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.1);
+    }
+  }
+  
+
+  @keyframes moveBackground {
+    from {
+      background-position: 0 0; /* Posisi awal */
+    }
+    to {
+      background-position: -500px -500px; /* Posisi akhir (bergerak ke kiri atas) */
+    }
+  }
+
+  .page {
+    animation: fadeIn 0.5s ease-in-out;
+    transform: translateX(0%);
+}
+
+.page.next {
+  transform: translateX(100%);
+}
+.page.prev {
+  transform: translateX(-100%);
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@media (max-width: 768px) {
+  .page-icon {
+    width: 70%;
+  }
+
+  button {
+    padding: 8px 16px;
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 18px;
+  }
+}
+
+.tooltip-container {
+  position: relative;
+}
+
+.tooltip {
+  display: none;
+  position: absolute;
+  background: #fff;
+  padding: 5px;
+  border: 1px solid #333;
+  border-radius: 5px;
+  top: -30px;
+  left: 0;
+}
+
+.tooltip-container:hover .tooltip {
+  display: block;
+}
+
